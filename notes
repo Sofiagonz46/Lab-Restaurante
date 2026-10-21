@@ -1,0 +1,21 @@
+Primero verifica el estado de Git:
+
+bash
+git --version
+git status
+
+
+Si git status dice que no es un repositorio, estás en una carpeta sin Git, que es lo normal en un proyecto nuevo. Crea el repo vacío en github.com (botón New, sin README) y luego, dentro de la carpeta del proyecto:
+
+bash
+git init
+git add .
+git status
+git commit -m "Agregar laboratorio de restaurante con 3 páginas"
+git branch -M main
+git remote add origin https://github.com/Sofiagonz46/NOMBRE-DEL-REPO.git
+git push -u origin main
+
+Para publicarlo como en tus tareas anteriores, ve a GitHub → Settings → Pages, elige la rama main y la carpeta / (root). Tu link quedará como https://sofiagonz46.github.io/NOMBRE-DEL-REPO/Page1.html.
+
+Si ya tienes el repo creado y solo subes cambios, usa git add ., git commit -m

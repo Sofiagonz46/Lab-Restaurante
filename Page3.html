@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas - Restaurante La Brasa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Restaurante La Brasa</h1>
+    <nav>
+      <a href="Page1.html">Inicio</a>
+      <a href="Page2.html">Menú</a>
+      <a href="Page3.html">Reservas</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Reserva tu mesa</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="nombre">Nombre completo:</label><br>
+          <input type="text" id="nombre" name="nombre" required>
+        </p>
+
+        <p>
+          <label for="correo">Correo electrónico:</label><br>
+          <input type="email" id="correo" name="correo" required>
+        </p>
+
+        <p>
+          <label for="telefono">Teléfono:</label><br>
+          <input type="tel" id="telefono" name="telefono">
+        </p>
+
+        <p>
+          <label for="fecha">Fecha:</label><br>
+          <input type="date" id="fecha" name="fecha" required>
+        </p>
+
+        <p>
+          <label for="hora">Hora:</label><br>
+          <input type="time" id="hora" name="hora" required>
+        </p>
+
+        <p>
+          <label for="personas">Número de personas:</label><br>
+          <select id="personas" name="personas">
+            <option value="1-2">1 a 2</option>
+            <option value="3-4">3 a 4</option>
+            <option value="5-8">5 a 8</option>
+          </select>
+        </p>
+
+        <p>Zona preferida:</p>
+        <p>
+          <input type="radio" id="interior" name="zona" value="interior" checked>
+          <label for="interior">Interior</label>
+          <input type="radio" id="terraza" name="zona" value="terraza">
+          <label for="terraza">Terraza</label>
+        </p>
+
+        <p>
+          <input type="checkbox" id="cumple" name="cumple">
+          <label for="cumple">Es una celebración de cumpleaños</label>
+        </p>
+
+        <p>
+          <label for="comentarios">Comentarios:</label><br>
+          <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+        </p>
+
+        <button type="submit">Reservar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Restaurante La Brasa</p>
+  </footer>
+</body>
+</html>
